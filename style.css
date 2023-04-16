@@ -1,0 +1,74 @@
+.container{
+background-color: blue;
+width: 80%;
+margin: auto;
+height: 80vh;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+
+   
+
+}
+.parent{
+background-color: black;
+width: 400px;
+height: 400px;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+animation: spin 1.5s  linear infinite reverse;
+
+}
+h2{
+  animation: spin 1.3s linear infinite;
+}
+.ball{
+    width: 70px;
+    height: 70px ;
+    border-radius: 50%;
+    background: radial-gradient(white, red 70%);
+     position: absolute;
+   left: 40px;
+ top: 40px;
+ animation: ball 3s infinite ease-in-out;
+}
+@keyframes ball {
+  0%{
+left: 40px;
+top: 40px;
+  }
+  25%{
+    left: 80%;
+top: 40px;
+  }
+  50%{
+left: 80%;
+top: 70vh;
+background:radial-gradient(yellow,pink);
+  }
+  75%{
+left: 40px;
+top: 70vh;
+background-color: black;
+  }
+  100%{
+    left: 40px;
+    top: 40px;
+  }
+}
+@keyframes spin {
+  0%{
+   transform: rotate(0deg);
+   background-color: aqua;
+  }
+ 
+  100%{
+
+transform: rotate(350deg);
+background-color: red;
+  }
+}
